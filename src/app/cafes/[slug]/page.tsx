@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getShopBySlug, getShops } from "@/lib/data";
+import { getShopBySlug, getShops, getNeighborhood } from "@/lib/data";
 import AttributeBadges from "@/components/AttributeBadges";
 import HoursTable from "@/components/HoursTable";
 import MiniMap from "@/components/MiniMap";
 import ShopImage from "@/components/ShopImage";
+import { cafeJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 
 export async function generateStaticParams() {
@@ -58,8 +59,31 @@ export default async function CafePage({
 
   const verified = verifiedLabel(shop.last_verified_at);
 
+  const neighborhood = await getNeighborhood(shop.neighborhood_slug);
+  const shopUrl = `${SITE.url}/cafes/${shop.slug}`;
+  const cafeBreadcrumb = breadcrumbJsonLd([
+    { name: "Home", url: SITE.url },
+    ...(neighborhood
+      ? [
+          {
+            name: neighborhood.name,
+            url: `${SITE.url}/neighborhoods/${neighborhood.slug}`,
+          },
+        ]
+      : []),
+    { name: shop.name, url: shopUrl },
+  ]);
+
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(cafeJsonLd(shop)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(cafeBreadcrumb) }}
+      />
       <article>
         <header className="mb-6">
           <p className="text-sm uppercase tracking-widest text-amber-700 dark:text-amber-500">
