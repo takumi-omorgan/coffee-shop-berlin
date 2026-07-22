@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getShopBySlug, getShops } from "@/lib/data";
 import AttributeBadges from "@/components/AttributeBadges";
 import HoursTable from "@/components/HoursTable";
+import MiniMap from "@/components/MiniMap";
 import ShopImage from "@/components/ShopImage";
 import { SITE } from "@/lib/site";
 
@@ -141,6 +142,17 @@ export default async function CafePage({
           <h2 className="mb-2 text-lg font-semibold">Opening hours</h2>
           <HoursTable hours={shop.hours} />
         </section>
+
+        {Number.isFinite(shop.latitude) && Number.isFinite(shop.longitude) && (
+          <section className="mb-6">
+            <h2 className="mb-2 text-lg font-semibold">On the map</h2>
+            <MiniMap
+              lat={shop.latitude}
+              lon={shop.longitude}
+              name={shop.name}
+            />
+          </section>
+        )}
 
         {verified && (
           <p className="text-sm text-zinc-500 dark:text-zinc-400">{verified}</p>
