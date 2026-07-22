@@ -1,0 +1,6 @@
+[
+  { "slug": "kreuzberg", "name": "Kreuzberg", "intro": "Edgy, multicultural heart of Berlin's specialty coffee scene." },
+  { "slug": "neukoelln", "name": "Neukölln", "intro": "A buzzy neighborhood packed with third-wave cafés and bakeries." },
+  { "slug": "mitte", "name": "Mitte", "intro": "The historic center, home to refined coffee bars and roasteries." },
+  { "slug": "prenzlauer-berg", "name": "Prenzlauer Berg", "intro": "Leafy streets and family-friendly cafés with serious coffee programs." }
+]
