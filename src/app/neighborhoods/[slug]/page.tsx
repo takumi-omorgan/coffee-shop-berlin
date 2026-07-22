@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getNeighborhood, getNeighborhoods, getShopsByNeighborhood } from "@/lib/data";
 import ShopCard from "@/components/ShopCard";
+import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 
 export async function generateStaticParams() {
@@ -37,8 +38,27 @@ export default async function NeighborhoodPage({
 
   const shops = await getShopsByNeighborhood(slug);
 
+  const pageUrl = `${SITE.url}/neighborhoods/${neighborhood.slug}`;
+  const neighborhoodBreadcrumb = breadcrumbJsonLd([
+    { name: "Home", url: SITE.url },
+    { name: "Neighborhoods", url: `${SITE.url}/neighborhoods` },
+    { name: neighborhood.name, url: pageUrl },
+  ]);
+
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(itemListJsonLd(shops, pageUrl)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(neighborhoodBreadcrumb),
+        }}
+      />
       <nav className="mb-6 text-sm">
         <Link
           href="/neighborhoods"
