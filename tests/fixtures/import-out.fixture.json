@@ -1,0 +1,88 @@
+[
+  {
+    "name": "The Barn",
+    "latitude": 52.52,
+    "longitude": 13.4,
+    "address_full": "Mitte 1, 10117 Berlin",
+    "postal_code": "10117",
+    "website_url": "https://thebarn.de",
+    "phone": "+49 30 111",
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "The Barn",
+    "latitude": 52.525,
+    "longitude": 13.405,
+    "address_full": "Mitte 2, 10117 Berlin",
+    "postal_code": "10117",
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "Café Straßenbär",
+    "latitude": 52.515,
+    "longitude": 13.395,
+    "address_full": "Mitte 3, 10115 Berlin",
+    "postal_code": "10115",
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "Bonanza Coffee Heroes",
+    "latitude": 52.5,
+    "longitude": 13.43,
+    "address_full": "Kreuzberg 1, 10999 Berlin",
+    "postal_code": "10999",
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "Split East Roastery",
+    "latitude": 52.55,
+    "longitude": 13.45,
+    "address_full": "Split Square A, Berlin",
+    "postal_code": null,
+    "website_url": null,
+    "phone": null,
+    "venue_type": "roastery_cafe",
+    "hours": null
+  },
+  {
+    "name": "Out North Cafe",
+    "latitude": 52.6,
+    "longitude": 13.3,
+    "address_full": "Far North, Berlin",
+    "postal_code": null,
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "Out South Cafe",
+    "latitude": 52.4,
+    "longitude": 13.55,
+    "address_full": "Far South, Berlin",
+    "postal_code": null,
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  },
+  {
+    "name": "No Coords Cafe",
+    "address_full": "Unknown, Berlin",
+    "postal_code": null,
+    "website_url": null,
+    "phone": null,
+    "venue_type": "cafe",
+    "hours": null
+  }
+]
