@@ -1,0 +1,263 @@
+{
+  "version": 0.7,
+  "generator": "Overpass API test fixture",
+  "osm3s": {
+    "timestamp_osm_base": "2024-01-15T12:00:00Z",
+    "copyright": "fixture data only — not real OSM data"
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1001,
+      "lat": 52.5074,
+      "lon": 13.4050,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Bonanza Coffee Heroes",
+        "addr:street": "Oderberger Straße",
+        "addr:housenumber": "35",
+        "addr:postcode": "10435",
+        "addr:city": "Berlin",
+        "website": "https://bonanzacoffee.de",
+        "phone": "+49 30 1234567",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-16:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1002,
+      "lat": 52.4985,
+      "lon": 13.4201,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Five Elephant Coffee",
+        "addr:street": "Reichenberger Straße",
+        "addr:housenumber": "101",
+        "addr:postcode": "10999",
+        "addr:city": "Berlin",
+        "contact:website": "https://fiveelephant.com",
+        "contact:phone": "+49 30 9876543",
+        "opening_hours": "Mo-Su 08:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1003,
+      "lat": 52.5306,
+      "lon": 13.4123,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Father Carpenter",
+        "addr:street": "Schönhauser Allee",
+        "addr:housenumber": "12",
+        "addr:postcode": "10437",
+        "addr:city": "Berlin",
+        "website": "https://fathercarpenter.de",
+        "opening_hours": "Mo-We 09:00-17:00; Th-Fr 09:00-20:00; Sa 10:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1004,
+      "lat": 52.5125,
+      "lon": 13.4195,
+      "tags": {
+        "amenity": "cafe",
+        "name": "The Visit Coffee Roastery",
+        "addr:street": "Bergmannstraße",
+        "addr:housenumber": "1",
+        "addr:postcode": "10961",
+        "addr:city": "Berlin",
+        "website": "https://thevisit.de",
+        "phone": "+49 30 1111222"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1005,
+      "lat": 52.4866,
+      "lon": 13.4310,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Westberlin Coffee",
+        "addr:street": "Goltzstraße",
+        "addr:housenumber": "19",
+        "addr:postcode": "10781",
+        "addr:city": "Berlin",
+        "contact:website": "https://westberlin.de",
+        "opening_hours": "Mo,We,Fr 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1006,
+      "lat": 52.5008,
+      "lon": 13.4079,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Caffè e Gelato",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1007,
+      "lat": 52.4990,
+      "lon": 13.4090,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Roast Republic",
+        "opening_hours": "by appointment"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1008,
+      "lat": 52.5167,
+      "lon": 13.3833,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Leuchtstoff Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1009,
+      "lat": 52.4700,
+      "lon": 13.4400,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Unterkatz Kaffee",
+        "addr:street": "Mehringdamm",
+        "addr:housenumber": "47",
+        "addr:postcode": "10961",
+        "addr:city": "Berlin",
+        "opening_hours": "Sa 10:00-14:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1010,
+      "lat": 52.5200,
+      "lon": 13.4050,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1011,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Missing Coords Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1012,
+      "lat": 52.5208,
+      "lon": 13.4095,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Companion Roastery",
+        "opening_hours": "Tu 08:00-15:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 2001,
+      "center": { "lat": 52.5234, "lon": 13.4109 },
+      "tags": {
+        "amenity": "cafe",
+        "name": "Mitte Way Cafe",
+        "addr:street": "Torstraße",
+        "addr:housenumber": "99",
+        "addr:postcode": "10119",
+        "addr:city": "Berlin",
+        "website": "https://waycafe.example",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa 08:00-19:00; Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1020,
+      "lat": 52.5130,
+      "lon": 13.4080,
+      "tags": {
+        "shop": "bakery",
+        "name": "Brot & Bohnen Bakery",
+        "addr:street": "Auguststraße",
+        "addr:housenumber": "11",
+        "addr:postcode": "10117",
+        "addr:city": "Berlin",
+        "opening_hours": "Mo-Sa 06:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1030,
+      "lat": 52.5200,
+      "lon": 13.4060,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Duplicate Drip Cafe",
+        "addr:street": "Lindenstraße",
+        "addr:housenumber": "5",
+        "website": "https://drip.example"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1031,
+      "lat": 52.5201,
+      "lon": 13.4065,
+      "tags": {
+        "amenity": "cafe",
+        "name": "duplicate drip cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1040,
+      "lat": 52.5400,
+      "lon": 13.3500,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Distant Sibling Cafe",
+        "website": "https://sibling.example"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1041,
+      "lat": 52.5450,
+      "lon": 13.3550,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Distant Sibling Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1050,
+      "lat": 52.5100,
+      "lon": 13.4120,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Multi Window Cafe",
+        "opening_hours": "Mo 08:00-12:00,13:00-18:00; Fr 09:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1060,
+      "lat": 52.5055,
+      "lon": 13.4020,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Sunday Brunch Spot",
+        "opening_hours": "Su 10:00-16:00"
+      }
+    }
+  ]
+}
